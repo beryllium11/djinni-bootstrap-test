@@ -225,6 +225,11 @@
 
 @media (min-width: 320px) and (max-width: 920px) {
 
+    #app .row.header-row {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
     #app .nav-link {
         text-align: center;
     }
