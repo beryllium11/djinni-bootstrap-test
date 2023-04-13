@@ -1,0 +1,259 @@
+/***** HEADER *****/
+
+#app {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+#app .offcanvas-top {
+    height: min-content;
+}
+
+#app.dark {
+    background-color: #4d4d4d;
+}
+
+#app .menu-toggle {
+    display: none
+}
+
+#app h1, #app h2, #app .btn {
+    font-family: 'Commissioner', sans-serif;
+}
+
+#app .btn {
+    font-weight: 700;
+    height: 40px;
+    border-radius: 8px;
+}
+#app .btn-group .btn.first {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#app .btn-group .btn.last {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#app h1 {
+    font-size: 40px;
+}
+
+#app h2 {
+    font-size: 24px;
+}
+
+#app .row.header-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 50px;
+}
+
+#app .custom-select {
+    border-width: 0;
+    padding-right: 15px;
+    padding-top: 0.5rem;
+}
+
+#app p, #app .custom-select, #app .form-control.search-input {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+#app header .nav-link.active p, #app .flex-column.nav-pills p, #app h1, #app h2 {
+    font-weight: 700;
+    color: #292929;
+    position: relative;
+}
+
+#app .form-select {
+    background-color: transparent;
+}
+
+#app.dark p, #app.dark .custom-select, #app.dark .form-control.search-input {
+    color: #b9b9b9;
+}
+
+#app .form-control.search-input:focus {
+    box-shadow: none;
+}
+
+#app.dark header .nav-link.active p, #app.dark .flex-column.nav-pills p, #app.dark h1, #app.dark h2, #app.dark .btn {
+    color: #ececec;
+}
+
+#app.dark .form-control.search-input, #app.dark .input-group-text.search-icon {
+    background-color: #ebebeb;
+}
+
+#app header .nav-link.active p:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ED7135;
+    bottom: -25px;
+    left: 0;
+}
+
+#app .nav-link {
+    padding: 0.5rem 0.5rem;;
+}
+
+#app .col-xl-2 .custom-nav.nav-link {padding: 0.5rem 0;}
+
+#app .form-control.search-input {
+    height: 40px;
+    padding-left: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-width: 0;
+}
+
+#app .input-group-text.search-icon {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-width: 0;
+    margin-right: 1px;
+}
+
+/***** SIDEBAR *****/
+#app .flex-column.nav-pills .active {
+    background-color: #ED7135;
+}
+#app .flex-column.nav-pills p i {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+#app .flex-column.nav-pills p {
+    font-weight: 700;
+    color: #666;
+    position: relative;
+}
+
+#app .flex-column.nav-pills .active p {
+    color: white;
+}
+
+/***** MAIN SECTION *****/
+
+#app .small-p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#app .sorting {
+    text-align: right
+}
+
+.toolbar-row {
+    margin-bottom: 30px;
+}
+
+#app .form-switch .form-check-input {
+    float: none;
+}
+
+#app .form-check-input:checked {
+    background-color: #ED7135;
+    border-color: #ED7135;
+}
+#app .form-check-input:focus, #app .btn.main-btn:focus {
+    border-color: rgba(237,113,53,.25);
+    box-shadow: 0 0 0 0.25rem rgba(237,113,53,.25);
+}
+
+#app .btn-group {
+    margin-bottom: 10px;
+    padding-top: 8px;
+}
+
+.description.collapsed {
+    max-height: 48px;
+    overflow: hidden;
+}
+
+#app .read-more {
+    font-weight: 400;
+    color: #292929;
+}
+
+.description.collapsed.full-height {
+    max-height: none;
+}
+
+.items-row .col .item-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items-row .col img {
+    max-width: 100%;
+}
+
+.items-row  .text-item-wrapper {
+    padding: 15px 24px;
+}
+
+#app .btn-toolbar {
+    padding: 16px;
+    border-top: 1px solid #ebebeb;
+}
+
+#app .btn.btn-outline-secondary {
+    border-width: 2px;
+    border-color: #ebebeb;
+}
+
+#app .btn.main-btn {
+    background-color: #ED7135;
+    margin-right: 16px;
+    color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 920px) {
+
+    #app .nav-link {
+        text-align: center;
+    }
+
+    #app .custom-select {
+        padding-left: 0;
+    }
+    #app h1 {
+        font-size: 24px;
+    }
+
+    #app h2 {
+        font-size: 20px;
+    }
+
+    #app .menu-toggle {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #app .desktop-menu {
+        display: none;
+    }
+
+    #app .main-section {
+        padding-left: 10px;
+    }
+
+    #app .nav-col {
+        margin-bottom: 15px;
+    }
+}

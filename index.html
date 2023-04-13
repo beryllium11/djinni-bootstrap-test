@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <title>Title</title>
+</head>
+<body id="app">
+    <header>
+        <div class="container">
+            <div class="row justify-content-start header-row">
+                <div class="col-2 menu-toggle">
+                    <button class="btn main-btn" type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop"
+                            aria-controls="offcanvasTop">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-12 desktop-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><p>Photos</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><p>Videos</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><p>Podcasts</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-5 col-9">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text search-icon" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control search-input" placeholder="Search for anything..."
+                               aria-label="Username"
+                               aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-12">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <select class="form-select custom-select" aria-label="Default select example">
+                                <option selected>English</option>
+                                <option value="1">Ukrainian</option>
+                                <option value="2">Spanish</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav" href="#"><p>Sign in</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-xl-3 offset-lg-3 col-lg-6 offset-md-3 col-md-6 col-12 nav-col">
+                    <nav class="nav flex-column nav-pills">
+                        <a class="nav-link active" aria-current="page" href="#"><p><i class="bi bi-image"></i>All photos</p>
+                        </a>
+                        <a class="nav-link" href="#"><p><i class="bi bi-emoji-smile"></i>Selfies</p></a>
+                        <a class="nav-link" href="#"><p><i class="bi bi-clock"></i>Recent</p></a>
+                        <a class="nav-link" href="#"><p><i class="bi bi-trash"></i>Deleted</p></a>
+                    </nav>
+                </div>
+                <div class="col-xl-8 offset-xl-1 main-section col-12">
+                    <div class="row toolbar-row justify-content-between">
+                        <div class="col">
+                            <h1>All photos</h1>
+                            <p class="small-p">150 items</p>
+                        </div>
+                        <div class="col sorting align-self-center">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn first btn-outline-dark active">Newest</button>
+                                <button type="button" class="btn last btn-outline-dark">Latest</button>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input dark-theme" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault"><p class="small-p">Dark theme</p></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row items-row gy-4">
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="item-wrapper border">
+                                <div><img src="./images/img.png" alt=""></div>
+                                <div class="text-item-wrapper">
+                                    <h2>Heading</h2>
+                                    <p class="description">Here goes some sample, example text that is relatively short.</p>
+                                </div>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <button type="button" class="btn main-btn">Save to collection</button>
+                                    <button type="button" class="btn btn-outline-secondary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="item-wrapper border">
+                                <div><img src="./images/img_1.png" alt=""></div>
+                                <div class="text-item-wrapper">
+                                    <h2>Heading</h2>
+                                    <p class="description">Here goes some sample, example text that is relatively short Here goes some sample, example text that is relatively short.</p>
+                                </div>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <button type="button" class="btn main-btn">Save to collection</button>
+                                    <button type="button" class="btn btn-outline-secondary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="item-wrapper border">
+                                <img src="./images/img_2.png" alt="">
+                                <div class="text-item-wrapper">
+                                    <h2>Heading</h2>
+                                    <p class="description">Here goes some sample, example text that is relatively short.</p>
+                                </div>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <button type="button" class="btn main-btn">Save to collection</button>
+                                    <button type="button" class="btn btn-outline-secondary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="item-wrapper border">
+                                <img src="./images/img_3.png" alt="">
+                                <div class="text-item-wrapper">
+                                    <h2>Heading</h2>
+                                    <p class="description">Here goes some sample, example text that is relatively short.</p>
+                                </div>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <button type="button" class="btn main-btn">Save to collection</button>
+                                    <button type="button" class="btn btn-outline-secondary">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="offcanvas offcanvas-top mobile-menu" tabindex="-1" id="offcanvasTop"
+         aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row justify-content-start header-row">
+                    <div class="col-12">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><p>Photos</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><p>Videos</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><p>Podcasts</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
